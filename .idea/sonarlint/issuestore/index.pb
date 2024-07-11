@@ -5,3 +5,27 @@ G
 src/main/java/Main.java,e\4\e44a8606ce010ad9b89aafdfcee2ab49afbf6d10
 L
 src/main/java/main/Main.java,7\f\7f08be4e9c62f2e5f8f02242af89b918cb9a135f
+T
+$src/main/java/conexion/Conexion.java,5\d\5d021a782578681df8ef8bd33bfd69651cb32fc3
+P
+ src/main/java/config/Server.java,5\1\5127fffcb437474711be4ad181495dc2d127d158
+W
+'src/main/java/persistencia/dao/DAO.java,b\2\b264d46f9990e3180125a2b64672305a97383dad
+V
+&src/main/java/utilidades/Response.java,5\2\521e6c7b8e6d87ff42d5df041b3e3cc1686caee1
+\
+,src/main/java/persistencia/dto/Response.java,9\1\911ab11d74580521acfb95a286d0f7e75e114ef4
+\
+,src/main/java/constantes/EstadoResponse.java,1\a\1aaabaee09019a89a6723f96860bcb30a9e1cf12
+\
+,src/main/java/vistas/principales/borrar.java,7\f\7f89e12fe7ab0c2ed4259bd876262da5b3325594
+P
+ src/main/java/vistas/borrar.java,4\7\47ea8c86cf73c16c51c172aafb415637ff1a4a18
+l
+<src/main/java/vistas/principales/VistaMainAdministrador.form,0\5\05ad7896ec96734a6f029b4aefbfef3b0eb3ae68
+a
+1src/main/java/controladores/ControladorLogin.java,c\d\cddf4313b90cd82a8c032390bb9957d84be6cda6
+`
+0src/main/java/vistas/secundarias/VistaLogin.java,8\6\86e20b57eba0dc1c049c73144ce9b4ddb793f41b
+X
+(src/main/java/utilidades/Validacion.java,b\d\bd62f75b685a351237e8bdd2788078d88bf0e7c0

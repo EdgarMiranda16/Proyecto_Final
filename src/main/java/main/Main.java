@@ -1,8 +1,10 @@
 package main;
 
+import controladores.ControladorLogin;
+
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        new ControladorLogin().vistaLogin.setVisible(true);
     }
 }

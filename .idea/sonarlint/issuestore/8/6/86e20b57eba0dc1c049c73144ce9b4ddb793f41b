@@ -1,0 +1,31 @@
+
+Œ
+java:S1192'"IDefine a constant instead of duplicating this literal "Segoe UI" 3 times.(ÙÌÎ8˜â„Š2J$b57b8e70-024e-482c-8257-34443ce13d18
+k
+java:S16043"(Make this anonymous inner class a lambda(ÿóÎ×8™â„Š2J$917b7be4-4758-4cb3-8dc5-bdf892d9e2ac
+q
+java:S1604†"(Make this anonymous inner class a lambda(¨í¡§úÿÿÿÿ8™â„Š2J$f2cafcf3-ff5d-462b-859c-7b11edf5647e
+›
+java:S1104"WMake btnIngresar a static final constant or non-public and provide accessors if needed.(‡ª¼8šâ„Š2J$69c8341a-ac39-4ab8-95ad-7d2d3876da04
+ 
+java:S1104“"WMake txtPassword a static final constant or non-public and provide accessors if needed.(úŠçÿşÿÿÿÿ8šâ„Š2J$9eef6ad9-bc57-460a-be89-2331947f197e
+š
+java:S1104”"VMake txtUsuario a static final constant or non-public and provide accessors if needed.(Š’²8›â„Š2J$e3ce10b8-c44d-4ad9-acd8-3ec5fbf55a7c
+›
+java:S1450"WRemove the "jButton2" field and declare it as a local variable in the relevant methods.(¤½ÃÜ8¿â„Š2J$c836e3d3-a637-46f6-846f-b7d24b3b0035
+Ÿ
+java:S1450"VRemove the "jLabel1" field and declare it as a local variable in the relevant methods.(°ãÉ¸ÿÿÿÿÿ8Àâ„Š2J$7f5417e4-2089-4fa4-a4db-699c6f649bb3
+Ÿ
+java:S1450‘"VRemove the "jLabel2" field and declare it as a local variable in the relevant methods.(™úòˆüÿÿÿÿ8Àâ„Š2J$b6092cc4-351d-4ae3-b557-02f47a7acfa7
+Ÿ
+java:S1450’"VRemove the "jLabel3" field and declare it as a local variable in the relevant methods.(Îä€øÿÿÿÿ8Áâ„Š2J$a62ece97-53f1-46e4-b20a-d0a7ea6fc433
+r
+java:S1172f"*Remove this unused method parameter "evt".(¹¾ûüÿÿÿÿ8Õâ„Š2J$e318f900-5fa7-41a5-8157-44abfdc024aa
+r
+java:S1197m"*Move the array designators [] to the type.(¡şÏÖøÿÿÿÿ8Øâ„Š2J$d5686684-b251-46b2-8aa8-67ae9e585f78
+ˆ
+java:S2147|"ECombine this catch with the one at line 122, which has the same body.(¨¦Š½8Ùâ„Š2J$e4bbb8e4-ceb7-4f4a-8ffd-91a053706fa4
+ˆ
+java:S2147~"ECombine this catch with the one at line 124, which has the same body.(ã€ 8Ùâ„Š2J$613ba20b-aef2-48eb-ba8b-2e8fb2be6c8f
+ˆ
+java:S2147€"ECombine this catch with the one at line 126, which has the same body.(ñÎ¯%8Úâ„Š2J$f594838b-48af-4646-9493-04f14eb0cb79

@@ -1,0 +1,33 @@
+
+“
+java:S1104"PMake HOST a static final constant or non-public and provide accessors if needed.(Êäµ•8žúë‚Š2J$4d047c18-ea05-406c-a47e-344831d8ae53
+˜
+java:S1104"PMake PORT a static final constant or non-public and provide accessors if needed.(ü˜É½ùÿÿÿÿ8Ÿúë‚Š2J$6b512ab6-22b7-44cd-bbea-42b339b323aa
+œ
+java:S1104"TMake DATABASE a static final constant or non-public and provide accessors if needed.(£Ãº“øÿÿÿÿ8Ÿúë‚Š2J$083c9124-901b-4857-9a1d-6385f45b9f3c
+˜
+java:S1104"PMake USER a static final constant or non-public and provide accessors if needed.(Äôµåýÿÿÿÿ8Ÿúë‚Š2J$e0d337dc-e193-4fbd-a723-2a4d2abb1abe
+—
+java:S1104"TMake PASSWORD a static final constant or non-public and provide accessors if needed.(žÏüÀ8 úë‚Š2J$70ebf1c0-5358-4760-875c-d5966b6b240c
+m
+java:S1444"*Make this "public static HOST" field final(Êäµ•8¢úë‚Š2J$80cab508-6d48-436e-b0ad-58122c82847f
+r
+java:S1444"*Make this "public static PORT" field final(ü˜É½ùÿÿÿÿ8¢úë‚Š2J$8b2e350e-a29b-45d2-9063-2332796d59c6
+v
+java:S1444".Make this "public static DATABASE" field final(£Ãº“øÿÿÿÿ8¢úë‚Š2J$7ff81d03-fff4-4e4a-b19a-42c7c6f065f6
+r
+java:S1444"*Make this "public static USER" field final(Äôµåýÿÿÿÿ8¢úë‚Š2J$4ecbfbf9-b7c0-4b67-99b1-802c5512da39
+q
+java:S1444".Make this "public static PASSWORD" field final(žÏüÀ8£úë‚Š2J$48e90905-2bf5-48f7-9133-edab80e95941
+’
+java:S3008"ORename this field "HOST" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Êäµ•8¥úë‚Š2J$61011316-2813-44ab-ada8-59dbf412c792
+—
+java:S3008"ORename this field "PORT" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ü˜É½ùÿÿÿÿ8¦úë‚Š2J$2696c2cf-026a-4720-b831-a0a52555707d
+›
+java:S3008"SRename this field "DATABASE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(£Ãº“øÿÿÿÿ8¦úë‚Š2J$bbed3069-704a-4ddf-a2cf-0ea9a4165ceb
+—
+java:S3008"ORename this field "USER" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Äôµåýÿÿÿÿ8¦úë‚Š2J$9173f82b-f6c9-4e26-97b1-6346325fde1c
+–
+java:S3008"SRename this field "PASSWORD" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(žÏüÀ8¦úë‚Š2J$b3deb57c-11c9-418e-bd20-f26205699240
+‚
+java:S1118":Add a private constructor to hide the implicit public one.(¡’ž‚ûÿÿÿÿ8±úë‚Š2J$50e0e9e5-0e6c-40e2-bcc6-0d3e44f62029
