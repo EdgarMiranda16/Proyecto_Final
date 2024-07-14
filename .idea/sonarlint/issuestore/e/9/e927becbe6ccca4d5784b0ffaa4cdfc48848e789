@@ -1,0 +1,12 @@
+
+ 	java:S1318"YComplete cases by adding the missing enum constants or add a default case to this switch.(Ï•‹“ÿÿÿÿÿ8†µÅš‹2J$c4f841a9-0e93-4183-8328-0ca0964b0817
+“
+java:S13018"KReplace this "switch" statement by "if" statements to increase readability.(Ï•‹“ÿÿÿÿÿ8‡µÅš‹2J$9e582cd1-a308-4eab-bd16-658cfb9b93ed
+d
+java:S62059"Remove this redundant block.(‘‘Þëùÿÿÿÿ8›©Âš‹2J$862977ad-7fb7-4e9d-b438-4d370ebe705d
+“
+java:S1301Q"KReplace this "switch" statement by "if" statements to increase readability.(Ï•‹“ÿÿÿÿÿ8¦÷°›‹2J$2b90f417-d900-4c2a-a923-071123657d60
+~
+java:S2696S"6Make the enclosing method "static" or remove this set.(€è´äþÿÿÿÿ8ÂÙç›‹2J$22e13793-3f58-4b50-a762-266572e9ff9f
+d
+java:S6205]"Remove this redundant block.(‘‘Þëùÿÿÿÿ8–ªÉš‹2J$1f6c35f9-704a-4d81-b97a-3846f78af208

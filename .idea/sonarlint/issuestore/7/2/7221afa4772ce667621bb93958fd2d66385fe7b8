@@ -1,0 +1,83 @@
+
+‘
+java:S1192H"IDefine a constant instead of duplicating this literal "Segoe UI" 4 times.(ââ‘òşÿÿÿÿ8ÂÂ¬›‹2J$1536533e-a1ec-4594-922b-1139359989f8
+J
+java:S1604S"(Make this anonymous inner class a lambda(ü«öşÿÿÿÿ8¼Îëœ‹2
+K
+java:S1604¤"(Make this anonymous inner class a lambda(ÉÖìŒüÿÿÿÿ8½Îëœ‹2
+K
+java:S1604­"(Make this anonymous inner class a lambda(ƒ§äŠüÿÿÿÿ8½Îëœ‹2
+K
+java:S1604Ô"(Make this anonymous inner class a lambda(•¢íèúÿÿÿÿ8½Îëœ‹2
+Ÿ
+java:S1104"\Make isSelectedPerfil a static final constant or non-public and provide accessors if needed.(Û‰§§8ÇÂ¬›‹2J$580c0e0c-6d38-4be8-b514-2a5a6a0ede20
+–
+java:S1104¨"YMake btnActualizar a static final constant or non-public and provide accessors if needed.(úÛ³ÛJ$765a97be-2021-471b-9e16-7651989c863b
+—
+java:S1104©"UMake btnCerrar a static final constant or non-public and provide accessors if needed.(¬µÓÃùÿÿÿÿJ$1d44b652-3325-48a8-80a9-b350972a5217
+™
+java:S1104ª"WMake btnEliminar a static final constant or non-public and provide accessors if needed.(šÄ·øşÿÿÿÿJ$d088f788-4d57-4fb0-a3f5-850d53b3e4b1
+š
+java:S1104¬"XMake btnRegistrar a static final constant or non-public and provide accessors if needed.(‹”öĞùÿÿÿÿJ$b9e50f80-0415-4e7a-ad83-43116e7414e3
+–
+java:S1104¹"TMake txtEmail a static final constant or non-public and provide accessors if needed.(£Ÿö¿ıÿÿÿÿJ$2778d626-edbc-44af-84d2-93866b1b44a8
+™
+java:S1104º"WMake txtPassword a static final constant or non-public and provide accessors if needed.(úŠçÿşÿÿÿÿJ$cbbe30d4-903c-499a-a0b3-d73c42b077cb
+’
+java:S1104»"UMake txtPerfil a static final constant or non-public and provide accessors if needed.(î“’ÕJ$689bc856-71f5-46bd-9eb6-44fc911964b9
+“
+java:S1104¼"VMake txtUsuario a static final constant or non-public and provide accessors if needed.(Š’²J$753ae9dd-6e50-40f5-9c47-9de7c5fae2ab
+y
+java:S1444"6Make this "public static isSelectedPerfil" field final(Û‰§§8ÉÂ¬›‹2J$af874fe6-7ec7-4ee5-bbd8-e27eb2842980
+l
+java:S1444»"/Make this "public static txtPerfil" field final(î“’ÕJ$e2727a90-b4ac-49eb-873b-d457c9d7f6cd
+›
+java:S1450«"YRemove the "btnLimpiar" field and declare it as a local variable in the relevant methods.(èÜ€óøÿÿÿÿJ$3342195b-3735-4a56-8a04-be56c7b461f0
+¥
+java:S1450­"cRemove the "btnSeleccionarPerfil" field and declare it as a local variable in the relevant methods.(£Ìµ…ıÿÿÿÿJ$dbd29688-630a-4596-8e97-243ece725245
+˜
+java:S1450¯"VRemove the "jLabel1" field and declare it as a local variable in the relevant methods.(°ãÉ¸ÿÿÿÿÿJ$9e7f4853-05bd-45a2-9b4a-ac0089c570fc
+˜
+java:S1450°"VRemove the "jLabel2" field and declare it as a local variable in the relevant methods.(™úòˆüÿÿÿÿJ$5a63855f-c7c9-4d90-8c37-7bcf88850aef
+˜
+java:S1450±"VRemove the "jLabel3" field and declare it as a local variable in the relevant methods.(Îä€øÿÿÿÿJ$76058b5b-12d0-4797-9552-370279c30124
+“
+java:S1450²"VRemove the "jLabel4" field and declare it as a local variable in the relevant methods.(«¢•ãJ$b97f63f4-cf23-4a50-b32a-33b007fa4e41
+“
+java:S1450³"VRemove the "jLabel5" field and declare it as a local variable in the relevant methods.(ó Ù®J$4edea7ff-f235-4f2f-843f-b3e9053c25c7
+˜
+java:S1450´"VRemove the "jPanel1" field and declare it as a local variable in the relevant methods.(´œ½ÿÿÿÿÿJ$d527bd97-2e3c-49e0-8fc4-bc7d40284552
+˜
+java:S1450µ"VRemove the "jPanel2" field and declare it as a local variable in the relevant methods.(õ òçüÿÿÿÿJ$8d99f7a1-0a68-43dc-962f-8b2915aac8d8
+“
+java:S1450¶"VRemove the "jPanel3" field and declare it as a local variable in the relevant methods.(Œ³èÈJ$11f3a619-a696-4992-9182-283925ad2b39
+
+java:S1450·"[Remove the "jScrollPane1" field and declare it as a local variable in the relevant methods.(¤á×ÿÿÿÿÿJ$47e2d922-f507-40bb-8f49-7f938385c0c3
+n
+java:S1948"+Make "registros" transient or serializable.(ö†Œ­8Ã¬›‹2J$0c11a824-54ac-41d7-9d7d-c39d33283266
+y
+java:S26961"6Make the enclosing method "static" or remove this set.(²Ë““8¨Ã¬›‹2J$12a0352b-f939-4d70-9eed-581c5d0dceda
+X
+java:S1161é":Add the "@Override" annotation above this method signature(®¸ù8ıÏëœ‹2
+X
+java:S1161î":Add the "@Override" annotation above this method signature(†ŒË³8‡Ğëœ‹2
+s
+java:S1172ª"*Remove this unused method parameter "evt".(¡Äò³úÿÿÿÿ8äÃ¬›‹2J$78e8a47c-7904-4c1d-bdf4-6ff0b9c40b47
+M
+java:S1172®"*Remove this unused method parameter "evt".(¹³Ã‘üÿÿÿÿ8İĞëœ‹2
+Y
+java:S2696¯"6Make the enclosing method "static" or remove this set.(€è´äşÿÿÿÿ8İĞëœ‹2
+M
+java:S1172¶"*Remove this unused method parameter "evt".(ÚØˆëÿÿÿÿÿ8àĞëœ‹2
+G
+java:S1172º"*Remove this unused method parameter "evt".(áÈ¹.8âĞëœ‹2
+T
+java:S2696¾"6Make the enclosing method "static" or remove this set.(¾ñæÒ8…Ñëœ‹2
+H
+java:S1172È"*Remove this unused method parameter "evt".(¼¥ ®8‹Ñëœ‹2
+u
+java:S1602×",Remove useless curly braces around statement(ûè©Àÿÿÿÿÿ8èÃ¬›‹2J$9d55e3ea-19df-44ce-b528-b27dfe97590a
+u
+java:S1602â",Remove useless curly braces around statement(Õê×ˆøÿÿÿÿ8ëÃ¬›‹2J$1940e314-0895-4cf6-b1a6-36455e433751
+O
+java:S1128"-Remove this unused import 'java.util.Arrays'.(î–˜Éüÿÿÿÿ8½Ñëœ‹2

@@ -1,5 +1,4 @@
 
-™
-java:S1104"VMake vistaLogin a static final constant or non-public and provide accessors if needed.(’òññ8ª‰ßƒŠ2J$e394e2f4-f28c-46d1-bfce-f5edffe2e518
-m
-java:S13012"KReplace this "switch" statement by "if" statements to increase readability.(Ï•‹“ÿÿÿÿÿ8Â®£„Š2
+“
+java:S13015"KReplace this "switch" statement by "if" statements to increase readability.(Ï•‹“ÿÿÿÿÿ8‚ŠÄ”‹2J$209fbef3-2f68-473e-be6d-9f923b9c11e4
+r	java:S106<"+Replace this use of System.out by a logger.(ëõË¹ûÿÿÿÿ8ò›À˜‹2J$149dd178-2944-41d9-9edc-263f4796d295

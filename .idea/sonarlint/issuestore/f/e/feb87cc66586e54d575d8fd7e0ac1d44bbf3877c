@@ -1,0 +1,12 @@
+
+
+java:S1104"VMake perfilImpl a static final constant or non-public and provide accessors if needed.(ì©ˆıÿÿÿÿ8Ì½êœ‹2J$b2a0ea70-f419-45e9-b383-4b3b1c16bbd6
+Ÿ
+java:S1104"WMake modalPerfil a static final constant or non-public and provide accessors if needed.(Úèƒêşÿÿÿÿ8Ì½êœ‹2J$52059b0a-4344-48d5-8a95-d047fa656327
+É
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¼ Òşüÿÿÿÿ8Î½êœ‹2J$3fc7f5d3-e9d7-4f05-a8d6-b6712aba72d4
+ 	java:S131$"YComplete cases by adding the missing enum constants or add a default case to this switch.(Ï•‹“ÿÿÿÿÿ8¼ëœ‹2J$b5ba8966-c65c-43b8-b436-06175000b39f
+“
+java:S1301$"KReplace this "switch" statement by "if" statements to increase readability.(Ï•‹“ÿÿÿÿÿ8Ô½êœ‹2J$660712b1-bd06-4f35-8a13-46c3182c77e3
+d
+java:S6205%"Remove this redundant block.(‘‘Şëùÿÿÿÿ8Ô½êœ‹2J$866ab768-5e8e-4c2b-b0d4-acef5b130406

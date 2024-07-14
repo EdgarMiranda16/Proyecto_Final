@@ -1,7 +1,7 @@
 package controladores;
 
-import constantes.EstadoResponse;
-import persistencia.dto.Response;
+import modelos.Usuario;
+import persistencia.impl.UsuarioImpl;
 import utilidades.Validacion;
 import vistas.principales.VistaMainAdministrador;
 import vistas.principales.VistaMainGerente;
@@ -14,12 +14,14 @@ import java.awt.event.ActionListener;
 
 public class ControladorLogin implements ActionListener {
 
-    public VistaLogin vistaLogin;
+    private VistaLogin vistaLogin;
+    private UsuarioImpl usuarioImpl = new UsuarioImpl();
 
     public ControladorLogin() {
         this(new VistaLogin());
         this.vistaLogin.setLocationRelativeTo(null);
         this.vistaLogin.setResizable(false);
+        this.vistaLogin.setVisible(true);
     }
 
     public ControladorLogin(VistaLogin view) {
@@ -43,28 +45,27 @@ public class ControladorLogin implements ActionListener {
             return;
         }
 
-        var respuesta = Response.builder()
-                .status(EstadoResponse.SUCCESS)
-                .build();
+        var respuesta = usuarioImpl.iniciarSesion(Usuario.builder()
+                .usuario(usuario)
+                .password(password)
+                .build());
 
         switch (respuesta.getStatus()) {
             case SUCCESS -> {
-                var perfil = "ADMINISTRADOR";
+                String perfil = respuesta.getData()
+                        .getPerfil()
+                        .getNombrePerfil()
+                        .toUpperCase();
 
                 switch (perfil) {
-                    case "ADMINISTRADOR" ->
-                        new VistaMainAdministrador().setVisible(true);
-                    case "GERENTE" ->
-                        new VistaMainGerente().setVisible(true);
-                    case "VENDEDOR" ->
-                        new VistaMainVendedor().setVisible(true);
-                    default ->
-                        JOptionPane.showMessageDialog(this.vistaLogin, "Perfil no contemplado...!");
+                    case "ADMINISTRADOR" -> new VistaMainAdministrador().setVisible(true);
+                    case "GERENTE" -> new VistaMainGerente().setVisible(true);
+                    case "VENDEDOR" -> new VistaMainVendedor().setVisible(true);
+                    default -> JOptionPane.showMessageDialog(this.vistaLogin, "Perfil no contemplado...!");
                 }
                 this.vistaLogin.dispose();
             }
-            case WARNING, ERROR ->
-                JOptionPane.showMessageDialog(this.vistaLogin, respuesta.getMessage());
+            case WARNING, ERROR -> JOptionPane.showMessageDialog(this.vistaLogin, respuesta.getMessage());
         }
     }
 }

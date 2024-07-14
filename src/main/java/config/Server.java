@@ -1,9 +1,9 @@
 package config;
 
 public class Server {
-    public static String HOST = "HOST";
-    public static String PORT = "PORT";
-    public static String DATABASE = "DATABASE";
-    public static String USER = "USER";
-    public static String PASSWORD = "PASSWORD";
+    public static String HOST = "localhost";
+    public static String PORT = "3306";
+    public static String DATABASE = "proyecto";
+    public static String USER = "root";
+    public static String PASSWORD = "123456";
 }
