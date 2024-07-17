@@ -1,0 +1,59 @@
+
+‘
+java:S1192J"IDefine a constant instead of duplicating this literal "Segoe UI" 3 times.(ââ‘òşÿÿÿÿ8³‚°ù‹2J$540b476f-7769-4dbc-a956-9757f959cb2b
+q
+java:S1604š"(Make this anonymous inner class a lambda(ÉÖìŒüÿÿÿÿ8½‚°ù‹2J$e3fde9ef-27ed-4a63-a87d-16a20e0b6ea7
+q
+java:S1604£"(Make this anonymous inner class a lambda(ƒ§äŠüÿÿÿÿ8Ì‚°ù‹2J$9f9ba40d-59e2-49b2-a87e-2998b3e0087b
+
+java:S1104¥"YMake btnActualizar a static final constant or non-public and provide accessors if needed.(úÛ³Û8Ñ‚°ù‹2J$4a6ee410-a161-4c8d-968a-777c40e6dd84
+
+java:S1104¦"UMake btnCerrar a static final constant or non-public and provide accessors if needed.(¬µÓÃùÿÿÿÿ8Ò‚°ù‹2J$0bc63722-7163-4b97-8de9-64accc3ddcee
+ 
+java:S1104§"WMake btnEliminar a static final constant or non-public and provide accessors if needed.(šÄ·øşÿÿÿÿ8Ò‚°ù‹2J$14a77da9-0457-4d4f-99b4-eacc5a72eee8
+¡
+java:S1104©"XMake btnRegistrar a static final constant or non-public and provide accessors if needed.(‹”öĞùÿÿÿÿ8Ò‚°ù‹2J$288404e8-1636-44f8-88db-c706660da5cc
+¡
+java:S1104·"XMake txtDireccion a static final constant or non-public and provide accessors if needed.(ÕåÈåùÿÿÿÿ8Ó‚°ù‹2J$16296415-f268-418f-a51c-706099870460
+™
+java:S1104º"WMake txtTelefono a static final constant or non-public and provide accessors if needed.(àÏâ­şÿÿÿÿJ$cc065e32-e4e9-4723-9c12-9a0bf668176a
+¢
+java:S1450¨"YRemove the "btnLimpiar" field and declare it as a local variable in the relevant methods.(èÜ€óøÿÿÿÿ8²ƒ°ù‹2J$86df63fa-a123-4ad4-a664-371077b58afa
+Ÿ
+java:S1450«"VRemove the "jLabel1" field and declare it as a local variable in the relevant methods.(°ãÉ¸ÿÿÿÿÿ8µƒ°ù‹2J$ae39e0ef-ca4b-4584-8f28-4cb6ba67cbf7
+Ÿ
+java:S1450¬"VRemove the "jLabel2" field and declare it as a local variable in the relevant methods.(™úòˆüÿÿÿÿ8µƒ°ù‹2J$f242bd3f-fd52-4d10-ba1e-251cd47feeb5
+Ÿ
+java:S1450­"VRemove the "jLabel3" field and declare it as a local variable in the relevant methods.(Îä€øÿÿÿÿ8¶ƒ°ù‹2J$b530bf8e-49de-42ed-856c-21689d371231
+š
+java:S1450®"VRemove the "jLabel4" field and declare it as a local variable in the relevant methods.(«¢•ã8¹ƒ°ù‹2J$be7e0c84-d488-4d39-aa16-d5ea1c99d5a8
+š
+java:S1450¯"VRemove the "jLabel5" field and declare it as a local variable in the relevant methods.(ó Ù®8Èƒ°ù‹2J$795578d7-63ac-4cb4-9afd-184484633b52
+Ÿ
+java:S1450°"VRemove the "jLabel6" field and declare it as a local variable in the relevant methods.(¸ôÂøÿÿÿÿ8Ùƒ°ù‹2J$6517e379-5c17-4f3f-b7aa-c02e3ea9da58
+Ÿ
+java:S1450±"VRemove the "jPanel1" field and declare it as a local variable in the relevant methods.(´œ½ÿÿÿÿÿ8èƒ°ù‹2J$0c59660d-fe2d-4d54-92f7-c1a21d863b6c
+Ÿ
+java:S1450²"VRemove the "jPanel2" field and declare it as a local variable in the relevant methods.(õ òçüÿÿÿÿ8÷ƒ°ù‹2J$feba53c1-323b-4979-b42d-889133a94bd7
+š
+java:S1450³"VRemove the "jPanel3" field and declare it as a local variable in the relevant methods.(Œ³èÈ8‡„°ù‹2J$9528ad29-b975-4383-aaf0-4f4e90e0ca25
+¤
+java:S1450´"[Remove the "jScrollPane1" field and declare it as a local variable in the relevant methods.(¤á×ÿÿÿÿÿ8–„°ù‹2J$54d70040-bc76-43a2-ad55-163e6044a9bd
+ƒ
+java:S1161Ë":Add the "@Override" annotation above this method signature(ŠÖô„øÿÿÿÿ8Õ„°ù‹2J$1bec37c8-f357-431e-a12e-8791b096adc6
+~
+java:S1161ß":Add the "@Override" annotation above this method signature(®¸ù8ä„°ù‹2J$1382b063-9f53-4766-97a1-a19eff496039
+~
+java:S1161ä":Add the "@Override" annotation above this method signature(†ŒË³8æ„°ù‹2J$13269449-f154-4ebb-b559-62c90845b798
+s
+java:S1172 "*Remove this unused method parameter "evt".(¡Äò³úÿÿÿÿ8ò„°ù‹2J$f076905b-887e-4af8-9c1a-cdedfd8a9d15
+s
+java:S1172¤"*Remove this unused method parameter "evt".(¹³Ã‘üÿÿÿÿ8ô„°ù‹2J$f60dd2a6-ce4e-4121-97aa-bc43ebb96b00
+m
+java:S1172¬"*Remove this unused method parameter "evt".(áÈ¹.8„…°ù‹2J$9242bd4e-6cfe-4bce-9e85-8604b112779e
+n
+java:S1172·"*Remove this unused method parameter "evt".(ïÜ¥¶8£…°ù‹2J$acdde240-59fb-4a21-b582-4c22d1876f46
+u
+java:S1602Ö",Remove useless curly braces around statement(ûè©Àÿÿÿÿÿ8¨…°ù‹2J$91e8c6a0-38c1-49d7-b280-d1880502f51c
+u
+java:S1602á",Remove useless curly braces around statement(Õê×ˆøÿÿÿÿ8«…°ù‹2J$45f9f900-e2b8-40aa-b156-163957b46a18

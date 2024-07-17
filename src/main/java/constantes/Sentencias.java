@@ -66,4 +66,34 @@ public class Sentencias {
     // Sentencia SQL para obtener un perfil por su id
     public static final String GET_PERFIL = "SELECT * FROM perfiles WHERE id = ?";
 
+    // Sentencia SQL para insertar un cliente
+    public static final String INSERT_CLIENTE = "INSERT INTO clientes (nombres, apellidos, direccion, telefono, email) VALUES (?, ?, ?, ?, ?)";
+
+    // Sentencia SQL para actualizar un cliente
+    public static final String UPDATE_CLIENTE = "UPDATE clientes SET nombres = ?, apellidos = ?, direccion = ?, telefono = ?, email = ? WHERE id = ?";
+
+    // Sentencia SQL para eliminar un cliente
+    public static final String DELETE_CLIENTE = "DELETE FROM clientes WHERE id = ?";
+
+    // Sentencia SQL para listar todos los clientes
+    public static final String LIST_CLIENTE = "SELECT * FROM clientes";
+
+    // Sentencia SQL para obtener un cliente por su id
+    public static final String GET_CLIENTE = "SELECT * FROM clientes WHERE id = ?";
+
+    // Sentencia SQL para insertar un producto
+    public static final String INSERT_PRODUCTO = "INSERT INTO productos (nombre_producto, descripcion, precio, stock) VALUES (?, ?, ?, ?)";
+
+    // Sentencia SQL para actualizar un producto
+    public static final String UPDATE_PRODUCTO = "UPDATE productos SET nombre_producto = ?, descripcion = ?, precio = ?, stock = ? WHERE id = ?";
+
+    // Sentencia SQL para eliminar un producto
+    public static final String DELETE_PRODUCTO = "DELETE FROM productos WHERE id = ?";
+
+    // Sentencia SQL para listar todos los productos
+    public static final String LIST_PRODUCTO = "SELECT * FROM productos";
+
+    // Sentencia SQL para obtener un producto por su id
+    public static final String GET_PRODUCTO = "SELECT * FROM productos WHERE id = ?";
+
 }

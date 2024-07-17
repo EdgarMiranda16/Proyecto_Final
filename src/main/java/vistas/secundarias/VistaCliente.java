@@ -7,12 +7,12 @@ package vistas.secundarias;
 import controladores.ControladorPerfil;
 import java.awt.Frame;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 import java.util.function.Predicate;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
+import modelos.Cliente;
 import modelos.Perfil;
 import modelos.Usuario;
 import utilidades.Validacion;
@@ -22,17 +22,15 @@ import vistas.modales.ModalPerfil;
  *
  * @author kei40
  */
-public class VistaUsuario extends javax.swing.JDialog {
+public class VistaCliente extends javax.swing.JDialog {
 
     DefaultTableModel modelo;
-    List<Usuario> registros = new ArrayList<>();
-
-    public static Optional<Perfil> isSelectedPerfil = Optional.empty();
+    List<Cliente> registros = new ArrayList<>();
 
     /**
      * Creates new form VistaUsuario
      */
-    public VistaUsuario(java.awt.Frame parent, boolean modal) {
+    public VistaCliente(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
         this.modelo = (DefaultTableModel) data.getModel();
@@ -49,13 +47,14 @@ public class VistaUsuario extends javax.swing.JDialog {
 
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        txtPerfil = new javax.swing.JTextField();
-        btnSeleccionarPerfil = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
-        txtUsuario = new javax.swing.JTextField();
+        txtTelefono = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
-        txtPassword = new javax.swing.JPasswordField();
         jLabel4 = new javax.swing.JLabel();
+        txtDireccion = new javax.swing.JTextField();
+        txtNombres = new javax.swing.JTextField();
+        jLabel6 = new javax.swing.JLabel();
+        txtApellidos = new javax.swing.JTextField();
         txtEmail = new javax.swing.JTextField();
         jPanel2 = new javax.swing.JPanel();
         btnRegistrar = new javax.swing.JButton();
@@ -74,26 +73,15 @@ public class VistaUsuario extends javax.swing.JDialog {
 
         jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204)), "Datos", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 0, 12), new java.awt.Color(51, 51, 51))); // NOI18N
 
-        jLabel1.setText("Perfil");
+        jLabel1.setText("Nombres");
 
-        txtPerfil.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        txtPerfil.setDisabledTextColor(new java.awt.Color(0, 0, 0));
-        txtPerfil.setEnabled(false);
+        jLabel2.setText("Teléfono");
 
-        btnSeleccionarPerfil.setBackground(new java.awt.Color(0, 153, 51));
-        btnSeleccionarPerfil.setForeground(new java.awt.Color(255, 255, 255));
-        btnSeleccionarPerfil.setText("Seleccione");
-        btnSeleccionarPerfil.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnSeleccionarPerfilActionPerformed(evt);
-            }
-        });
+        jLabel3.setText("Email");
 
-        jLabel2.setText("Usuario");
+        jLabel4.setText("Dirección");
 
-        jLabel3.setText("Contraseña");
-
-        jLabel4.setText("Email");
+        jLabel6.setText("Apellidos");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -101,30 +89,28 @@ public class VistaUsuario extends javax.swing.JDialog {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabel1)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(txtPerfil, javax.swing.GroupLayout.PREFERRED_SIZE, 492, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(btnSeleccionarPerfil))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                .addComponent(jLabel2)
-                                .addGap(18, 18, 18))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jLabel4)
-                                .addGap(29, 29, 29)))
+                            .addComponent(jLabel4)
+                            .addComponent(jLabel2))
+                        .addGap(29, 29, 29)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(txtUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(txtNombres, javax.swing.GroupLayout.DEFAULT_SIZE, 250, Short.MAX_VALUE)
+                                    .addComponent(txtTelefono))
                                 .addGap(18, 18, 18)
-                                .addComponent(jLabel3)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel6)
+                                    .addComponent(jLabel3))
                                 .addGap(18, 18, 18)
-                                .addComponent(txtPassword, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(txtEmail))))
-                .addContainerGap(14, Short.MAX_VALUE))
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(txtApellidos, javax.swing.GroupLayout.DEFAULT_SIZE, 250, Short.MAX_VALUE)
+                                    .addComponent(txtEmail)))
+                            .addComponent(txtDireccion))))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -132,18 +118,19 @@ public class VistaUsuario extends javax.swing.JDialog {
                 .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel1)
-                    .addComponent(txtPerfil, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnSeleccionarPerfil))
+                    .addComponent(txtNombres, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel6)
+                    .addComponent(txtApellidos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
-                    .addComponent(txtUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtTelefono, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel3)
-                    .addComponent(txtPassword, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtEmail, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel4)
-                    .addComponent(txtEmail, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtDireccion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -226,7 +213,7 @@ public class VistaUsuario extends javax.swing.JDialog {
                 {null, null, null, null}
             },
             new String [] {
-                "Usuario", "Perfil", "Email", "Fecha Alta"
+                "Cliente", "Teléfono", "Email", "Fecha Alta"
             }
         ) {
             boolean[] canEdit = new boolean [] {
@@ -251,7 +238,7 @@ public class VistaUsuario extends javax.swing.JDialog {
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane1)
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 664, Short.MAX_VALUE)
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addComponent(jLabel5)
                         .addGap(18, 18, 18)
@@ -303,92 +290,98 @@ public class VistaUsuario extends javax.swing.JDialog {
     }//GEN-LAST:event_btnCerrarActionPerformed
 
     private void btnLimpiarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLimpiarActionPerformed
-        VistaUsuario.isSelectedPerfil = Optional.empty();
-        VistaUsuario.txtPerfil.setText("");
-        this.txtUsuario.setText("");
-        this.txtPassword.setText("");
+        this.txtNombres.setText("");
+        this.txtApellidos.setText("");
+        this.txtTelefono.setText("");
         this.txtEmail.setText("");
+        this.txtDireccion.setText("");
     }//GEN-LAST:event_btnLimpiarActionPerformed
-
-    private void btnSeleccionarPerfilActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSeleccionarPerfilActionPerformed
-        ControladorPerfil controlador = new ControladorPerfil(
-                new ModalPerfil((Frame) this.getParent(), true));
-    }//GEN-LAST:event_btnSeleccionarPerfilActionPerformed
 
     private void dataMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_dataMouseClicked
         int index = this.data.getSelectedRow();
-        Usuario elemento = this.registros.get(index);
+        Cliente elemento = this.registros.get(index);
 
-        VistaUsuario.isSelectedPerfil = Optional.ofNullable(elemento.getPerfil());
-        if (VistaUsuario.isSelectedPerfil.isPresent()) {
-            VistaUsuario.txtPerfil.setText(VistaUsuario.isSelectedPerfil.get().getNombrePerfil());
-        }
-
-        this.txtUsuario.setText(String.valueOf(elemento.getUsuario()));
-        this.txtPassword.setText(String.valueOf(elemento.getPassword()));
-        this.txtEmail.setText(String.valueOf(elemento.getEmail()));
+        this.txtNombres.setText(elemento.getNombres());
+        this.txtApellidos.setText(elemento.getApellidos());
+        this.txtTelefono.setText(elemento.getTelefono());
+        this.txtEmail.setText(elemento.getEmail());
+        this.txtDireccion.setText(elemento.getDireccion());
     }//GEN-LAST:event_dataMouseClicked
 
     private void txtBuscarKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtBuscarKeyReleased
         String buscar = String.valueOf(this.txtBuscar.getText());
 
-        Predicate<Usuario> porUsuario = e -> e.getUsuario()
+        Predicate<Cliente> porNombres = e -> e.getNombres()
                 .toLowerCase()
                 .contains(buscar.toLowerCase());
-        Predicate<Usuario> porPerfil = e -> e.getPerfil().getDescripcion()
+        
+        Predicate<Cliente> porApellidos = e -> e.getApellidos()
                 .toLowerCase()
                 .contains(buscar.toLowerCase());
+        
+        Predicate<Cliente> porCliente = e -> e.getNombres()
+                .concat(" ")
+                .concat(e.getApellidos())
+                .toLowerCase()
+                .contains(buscar.toLowerCase());
+        
+        Predicate<Cliente> porClienteReverso = e -> e.getApellidos()
+                .concat(" ")
+                .concat(e.getNombres())
+                .toLowerCase()
+                .contains(buscar.toLowerCase());
+        
 
-        List<Usuario> filtrados = this.registros.stream()
-                .filter(porUsuario.or(porPerfil))
+        List<Cliente> filtrados = this.registros.stream()
+                .filter(porNombres.or(porApellidos)
+                        .or(porCliente)
+                        .or(porClienteReverso))
                 .toList();
 
         this.modelo.setRowCount(0);
         filtrados.forEach(e -> {
-            this.modelo.addRow(new String[]{e.getUsuario(),
-                e.getPerfil().getNombrePerfil(),
+            this.modelo.addRow(new String[]{e.getNombres().concat(" ").concat(e.getApellidos()),
+                e.getTelefono(),
                 e.getEmail(),
-                e.getFechaCreacion().toString()});
+                e.getFechaRegistro().toString()});
         });
     }//GEN-LAST:event_txtBuscarKeyReleased
 
-    public void pintar(List<Usuario> registros) {
+    public void pintar(List<Cliente> registros) {
         this.registros = registros;
         this.modelo.setRowCount(0);
         registros.forEach(e -> {
-            this.modelo.addRow(new String[]{e.getUsuario(),
-                e.getPerfil().getNombrePerfil(),
+            this.modelo.addRow(new String[]{e.getNombres().concat(" ").concat(e.getApellidos()),
+                e.getTelefono(),
                 e.getEmail(),
-                e.getFechaCreacion().toString()});
+                e.getFechaRegistro().toString()});
         });
     }
 
-    public Optional<Usuario> agregar() {
-        if (!VistaUsuario.isSelectedPerfil.isPresent()) {
-            JOptionPane.showMessageDialog(this, "Seleccione un perfil...!");
-            return Optional.empty();
-        }
-
-        String usuario = this.txtUsuario.getText();
-        String password = String.valueOf(this.txtPassword.getPassword());
+    public Optional<Cliente> agregar() {
+        String nombres = this.txtNombres.getText();
+        String apellidos = this.txtApellidos.getText();
+        String telefono = this.txtTelefono.getText();
         String email = this.txtEmail.getText();
+        String direccion = this.txtDireccion.getText();
 
-        if (!Validacion.validarVacios(usuario)) {
+        if (!Validacion.validarVacios(nombres, apellidos, email)) {
             JOptionPane.showMessageDialog(this, "Faltan datos...!");
             return Optional.empty();
         }
 
-        Usuario registro = Usuario.builder()
-                .perfil(VistaUsuario.isSelectedPerfil.get())
-                .usuario(usuario)
-                .password(password)
+        Cliente registro = Cliente.builder()
+                .nombres(nombres)
+                .apellidos(apellidos)
+                .telefono(telefono)
                 .email(email)
+                .direccion(direccion)
                 .build();
 
         return Optional.ofNullable(registro);
     }
 
-    public Optional<Usuario> actualizar() {
+    public Optional<Cliente> actualizar() {
         int index = data.getSelectedRow();
 
         if (!data.isRowSelected(index)) {
@@ -400,7 +393,7 @@ public class VistaUsuario extends javax.swing.JDialog {
             return Optional.empty();
         }
 
-        Optional<Usuario> salida = this.agregar();
+        Optional<Cliente> salida = this.agregar();
         if (salida.isPresent()) {
             salida.get().setId(this.registros.get(index).getId());
         }
@@ -408,7 +401,7 @@ public class VistaUsuario extends javax.swing.JDialog {
         return salida;
     }
 
-    public Optional<Usuario> eliminar() {
+    public Optional<Cliente> eliminar() {
         int index = data.getSelectedRow();
 
         if (!data.isRowSelected(index)) {
@@ -430,21 +423,22 @@ public class VistaUsuario extends javax.swing.JDialog {
     public javax.swing.JButton btnEliminar;
     private javax.swing.JButton btnLimpiar;
     public javax.swing.JButton btnRegistrar;
-    private javax.swing.JButton btnSeleccionarPerfil;
     private javax.swing.JTable data;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JScrollPane jScrollPane1;
+    public javax.swing.JTextField txtApellidos;
     private javax.swing.JTextField txtBuscar;
+    public javax.swing.JTextField txtDireccion;
     public javax.swing.JTextField txtEmail;
-    public javax.swing.JPasswordField txtPassword;
-    public static javax.swing.JTextField txtPerfil;
-    public javax.swing.JTextField txtUsuario;
+    public javax.swing.JTextField txtNombres;
+    public javax.swing.JTextField txtTelefono;
     // End of variables declaration//GEN-END:variables
 }

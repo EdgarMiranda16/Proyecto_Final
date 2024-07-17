@@ -4,7 +4,11 @@
  */
 package vistas.principales;
 
+import controladores.ControladorCliente;
+import controladores.ControladorProducto;
 import controladores.ControladorUsuario;
+import vistas.secundarias.VistaCliente;
+import vistas.secundarias.VistaProducto;
 import vistas.secundarias.VistaUsuario;
 
 /**
@@ -60,10 +64,20 @@ public class VistaMainAdministrador extends javax.swing.JFrame {
         jMenu2.setText("Mantenimiento");
 
         jMenuItem2.setText("Clientes");
+        jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem2ActionPerformed(evt);
+            }
+        });
         jMenu2.add(jMenuItem2);
         jMenu2.add(jSeparator1);
 
         jMenuItem3.setText("Productos");
+        jMenuItem3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem3ActionPerformed(evt);
+            }
+        });
         jMenu2.add(jMenuItem3);
         jMenu2.add(jSeparator2);
 
@@ -115,6 +129,14 @@ public class VistaMainAdministrador extends javax.swing.JFrame {
     private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem4ActionPerformed
          ControladorUsuario controlador = new ControladorUsuario(new VistaUsuario(this, true));
     }//GEN-LAST:event_jMenuItem4ActionPerformed
+
+    private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
+        ControladorCliente controlador = new ControladorCliente(new VistaCliente(this, true));
+    }//GEN-LAST:event_jMenuItem2ActionPerformed
+
+    private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
+        ControladorProducto controlador = new ControladorProducto(new VistaProducto(this, true));
+    }//GEN-LAST:event_jMenuItem3ActionPerformed
 
     /**
      * @param args the command line arguments

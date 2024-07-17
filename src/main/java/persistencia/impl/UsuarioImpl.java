@@ -73,6 +73,7 @@ public class UsuarioImpl implements IUsuario {
             response.setMessage("Error al ingresar el registro");
             System.out.println(ex);
         }
+
         return response;
     }
 
@@ -96,6 +97,7 @@ public class UsuarioImpl implements IUsuario {
             response.setMessage("Error al actualizar el registro");
             System.out.println(ex);
         }
+
         return response;
     }
 

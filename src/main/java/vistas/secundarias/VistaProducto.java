@@ -4,35 +4,29 @@
  */
 package vistas.secundarias;
 
-import controladores.ControladorPerfil;
-import java.awt.Frame;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 import java.util.function.Predicate;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
-import modelos.Perfil;
-import modelos.Usuario;
+import modelos.Cliente;
+import modelos.Producto;
 import utilidades.Validacion;
-import vistas.modales.ModalPerfil;
 
 /**
  *
  * @author kei40
  */
-public class VistaUsuario extends javax.swing.JDialog {
+public class VistaProducto extends javax.swing.JDialog {
 
     DefaultTableModel modelo;
-    List<Usuario> registros = new ArrayList<>();
-
-    public static Optional<Perfil> isSelectedPerfil = Optional.empty();
+    List<Producto> registros = new ArrayList<>();
 
     /**
      * Creates new form VistaUsuario
      */
-    public VistaUsuario(java.awt.Frame parent, boolean modal) {
+    public VistaProducto(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
         this.modelo = (DefaultTableModel) data.getModel();
@@ -49,14 +43,13 @@ public class VistaUsuario extends javax.swing.JDialog {
 
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        txtPerfil = new javax.swing.JTextField();
-        btnSeleccionarPerfil = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
-        txtUsuario = new javax.swing.JTextField();
+        txtPrecio = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
-        txtPassword = new javax.swing.JPasswordField();
         jLabel4 = new javax.swing.JLabel();
-        txtEmail = new javax.swing.JTextField();
+        txtDescripcion = new javax.swing.JTextField();
+        txtProducto = new javax.swing.JTextField();
+        txtStock = new javax.swing.JTextField();
         jPanel2 = new javax.swing.JPanel();
         btnRegistrar = new javax.swing.JButton();
         btnActualizar = new javax.swing.JButton();
@@ -74,26 +67,13 @@ public class VistaUsuario extends javax.swing.JDialog {
 
         jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204)), "Datos", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 0, 12), new java.awt.Color(51, 51, 51))); // NOI18N
 
-        jLabel1.setText("Perfil");
+        jLabel1.setText("Producto");
 
-        txtPerfil.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        txtPerfil.setDisabledTextColor(new java.awt.Color(0, 0, 0));
-        txtPerfil.setEnabled(false);
+        jLabel2.setText("Precio");
 
-        btnSeleccionarPerfil.setBackground(new java.awt.Color(0, 153, 51));
-        btnSeleccionarPerfil.setForeground(new java.awt.Color(255, 255, 255));
-        btnSeleccionarPerfil.setText("Seleccione");
-        btnSeleccionarPerfil.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnSeleccionarPerfilActionPerformed(evt);
-            }
-        });
+        jLabel3.setText("Stock");
 
-        jLabel2.setText("Usuario");
-
-        jLabel3.setText("Contraseña");
-
-        jLabel4.setText("Email");
+        jLabel4.setText("Descripción");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -101,30 +81,23 @@ public class VistaUsuario extends javax.swing.JDialog {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabel1)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(txtPerfil, javax.swing.GroupLayout.PREFERRED_SIZE, 492, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(btnSeleccionarPerfil))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                .addComponent(jLabel2)
-                                .addGap(18, 18, 18))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jLabel4)
-                                .addGap(29, 29, 29)))
+                            .addComponent(jLabel4)
+                            .addComponent(jLabel2))
+                        .addGap(29, 29, 29)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(txtUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtPrecio, javax.swing.GroupLayout.DEFAULT_SIZE, 250, Short.MAX_VALUE)
                                 .addGap(18, 18, 18)
                                 .addComponent(jLabel3)
-                                .addGap(18, 18, 18)
-                                .addComponent(txtPassword, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(txtEmail))))
-                .addContainerGap(14, Short.MAX_VALUE))
+                                .addGap(38, 38, 38)
+                                .addComponent(txtStock, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(txtDescripcion)
+                            .addComponent(txtProducto))))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -132,18 +105,17 @@ public class VistaUsuario extends javax.swing.JDialog {
                 .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel1)
-                    .addComponent(txtPerfil, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnSeleccionarPerfil))
+                    .addComponent(txtProducto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
-                    .addComponent(txtUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtPrecio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel3)
-                    .addComponent(txtPassword, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtStock, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel4)
-                    .addComponent(txtEmail, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtDescripcion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -226,7 +198,7 @@ public class VistaUsuario extends javax.swing.JDialog {
                 {null, null, null, null}
             },
             new String [] {
-                "Usuario", "Perfil", "Email", "Fecha Alta"
+                "Producto", "Precio", "Stock", "Fecha Alta"
             }
         ) {
             boolean[] canEdit = new boolean [] {
@@ -251,7 +223,7 @@ public class VistaUsuario extends javax.swing.JDialog {
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane1)
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 676, Short.MAX_VALUE)
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addComponent(jLabel5)
                         .addGap(18, 18, 18)
@@ -303,92 +275,75 @@ public class VistaUsuario extends javax.swing.JDialog {
     }//GEN-LAST:event_btnCerrarActionPerformed
 
     private void btnLimpiarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLimpiarActionPerformed
-        VistaUsuario.isSelectedPerfil = Optional.empty();
-        VistaUsuario.txtPerfil.setText("");
-        this.txtUsuario.setText("");
-        this.txtPassword.setText("");
-        this.txtEmail.setText("");
+        this.txtProducto.setText("");
+        this.txtPrecio.setText("");
+        this.txtStock.setText("");
+        this.txtDescripcion.setText("");
     }//GEN-LAST:event_btnLimpiarActionPerformed
-
-    private void btnSeleccionarPerfilActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSeleccionarPerfilActionPerformed
-        ControladorPerfil controlador = new ControladorPerfil(
-                new ModalPerfil((Frame) this.getParent(), true));
-    }//GEN-LAST:event_btnSeleccionarPerfilActionPerformed
 
     private void dataMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_dataMouseClicked
         int index = this.data.getSelectedRow();
-        Usuario elemento = this.registros.get(index);
+        Producto elemento = this.registros.get(index);
 
-        VistaUsuario.isSelectedPerfil = Optional.ofNullable(elemento.getPerfil());
-        if (VistaUsuario.isSelectedPerfil.isPresent()) {
-            VistaUsuario.txtPerfil.setText(VistaUsuario.isSelectedPerfil.get().getNombrePerfil());
-        }
-
-        this.txtUsuario.setText(String.valueOf(elemento.getUsuario()));
-        this.txtPassword.setText(String.valueOf(elemento.getPassword()));
-        this.txtEmail.setText(String.valueOf(elemento.getEmail()));
+        this.txtProducto.setText(elemento.getNombreProducto());
+        this.txtPrecio.setText(String.valueOf(elemento.getPrecio()));
+        this.txtStock.setText(String.valueOf(elemento.getStock()));
+        this.txtDescripcion.setText(elemento.getDescripcion());
     }//GEN-LAST:event_dataMouseClicked
 
     private void txtBuscarKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtBuscarKeyReleased
         String buscar = String.valueOf(this.txtBuscar.getText());
 
-        Predicate<Usuario> porUsuario = e -> e.getUsuario()
-                .toLowerCase()
-                .contains(buscar.toLowerCase());
-        Predicate<Usuario> porPerfil = e -> e.getPerfil().getDescripcion()
+        Predicate<Producto> porNombres = e -> e.getNombreProducto()
                 .toLowerCase()
                 .contains(buscar.toLowerCase());
 
-        List<Usuario> filtrados = this.registros.stream()
-                .filter(porUsuario.or(porPerfil))
+        List<Producto> filtrados = this.registros.stream()
+                .filter(porNombres)
                 .toList();
 
         this.modelo.setRowCount(0);
         filtrados.forEach(e -> {
-            this.modelo.addRow(new String[]{e.getUsuario(),
-                e.getPerfil().getNombrePerfil(),
-                e.getEmail(),
-                e.getFechaCreacion().toString()});
+            this.modelo.addRow(new String[]{e.getNombreProducto(),
+                String.valueOf(e.getPrecio()),
+                String.valueOf(e.getStock()),
+                e.getFechaAgregado().toString()});
         });
     }//GEN-LAST:event_txtBuscarKeyReleased
 
-    public void pintar(List<Usuario> registros) {
+    public void pintar(List<Producto> registros) {
         this.registros = registros;
         this.modelo.setRowCount(0);
         registros.forEach(e -> {
-            this.modelo.addRow(new String[]{e.getUsuario(),
-                e.getPerfil().getNombrePerfil(),
-                e.getEmail(),
-                e.getFechaCreacion().toString()});
+            this.modelo.addRow(new String[]{e.getNombreProducto(),
+                String.valueOf(e.getPrecio()),
+                String.valueOf(e.getStock()),
+                e.getFechaAgregado().toString()});
         });
     }
 
-    public Optional<Usuario> agregar() {
-        if (!VistaUsuario.isSelectedPerfil.isPresent()) {
-            JOptionPane.showMessageDialog(this, "Seleccione un perfil...!");
-            return Optional.empty();
-        }
+    public Optional<Producto> agregar() {
+        String producto = this.txtProducto.getText();
+        String precio = this.txtPrecio.getText();
+        String stock = this.txtStock.getText();
+        String descripcion = this.txtDescripcion.getText();
 
-        String usuario = this.txtUsuario.getText();
-        String password = String.valueOf(this.txtPassword.getPassword());
-        String email = this.txtEmail.getText();
-
-        if (!Validacion.validarVacios(usuario)) {
+        if (!Validacion.validarVacios(producto, precio, stock)) {
             JOptionPane.showMessageDialog(this, "Faltan datos...!");
             return Optional.empty();
         }
 
-        Usuario registro = Usuario.builder()
-                .perfil(VistaUsuario.isSelectedPerfil.get())
-                .usuario(usuario)
-                .password(password)
-                .email(email)
+        Producto registro = Producto.builder()
+                .nombreProducto(producto)
+                .precio(Double.valueOf(precio))
+                .stock(Integer.valueOf(stock))
+                .descripcion(descripcion)
                 .build();
 
         return Optional.ofNullable(registro);
     }
 
-    public Optional<Usuario> actualizar() {
+    public Optional<Producto> actualizar() {
         int index = data.getSelectedRow();
 
         if (!data.isRowSelected(index)) {
@@ -400,7 +355,7 @@ public class VistaUsuario extends javax.swing.JDialog {
             return Optional.empty();
         }
 
-        Optional<Usuario> salida = this.agregar();
+        Optional<Producto> salida = this.agregar();
         if (salida.isPresent()) {
             salida.get().setId(this.registros.get(index).getId());
         }
@@ -408,7 +363,7 @@ public class VistaUsuario extends javax.swing.JDialog {
         return salida;
     }
 
-    public Optional<Usuario> eliminar() {
+    public Optional<Producto> eliminar() {
         int index = data.getSelectedRow();
 
         if (!data.isRowSelected(index)) {
@@ -430,7 +385,6 @@ public class VistaUsuario extends javax.swing.JDialog {
     public javax.swing.JButton btnEliminar;
     private javax.swing.JButton btnLimpiar;
     public javax.swing.JButton btnRegistrar;
-    private javax.swing.JButton btnSeleccionarPerfil;
     private javax.swing.JTable data;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
@@ -442,9 +396,9 @@ public class VistaUsuario extends javax.swing.JDialog {
     private javax.swing.JPanel jPanel3;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextField txtBuscar;
-    public javax.swing.JTextField txtEmail;
-    public javax.swing.JPasswordField txtPassword;
-    public static javax.swing.JTextField txtPerfil;
-    public javax.swing.JTextField txtUsuario;
+    public javax.swing.JTextField txtDescripcion;
+    public javax.swing.JTextField txtPrecio;
+    public javax.swing.JTextField txtProducto;
+    public javax.swing.JTextField txtStock;
     // End of variables declaration//GEN-END:variables
 }

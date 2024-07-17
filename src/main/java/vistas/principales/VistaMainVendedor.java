@@ -4,6 +4,9 @@
  */
 package vistas.principales;
 
+import controladores.ControladorCliente;
+import vistas.secundarias.VistaCliente;
+
 /**
  *
  * @author kei40
@@ -51,6 +54,11 @@ public class VistaMainVendedor extends javax.swing.JFrame {
         jMenu2.setText("Mantenimiento");
 
         jMenuItem2.setText("Clientes");
+        jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem2ActionPerformed(evt);
+            }
+        });
         jMenu2.add(jMenuItem2);
 
         jMenuBar1.add(jMenu2);
@@ -82,6 +90,10 @@ public class VistaMainVendedor extends javax.swing.JFrame {
     private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
         System.exit(0);
     }//GEN-LAST:event_jMenuItem1ActionPerformed
+
+    private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
+        ControladorCliente controlador = new ControladorCliente(new VistaCliente(this, true));
+    }//GEN-LAST:event_jMenuItem2ActionPerformed
 
     /**
      * @param args the command line arguments
