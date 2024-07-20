@@ -1,0 +1,17 @@
+
+ 	java:S1312"YComplete cases by adding the missing enum constants or add a default case to this switch.(Ï•‹“ÿÿÿÿÿ8‹Å°÷Œ2J$2d1e011e-84da-4b3a-84be-bfe806d9ec3d
+“
+java:S13012"KReplace this "switch" statement by "if" statements to increase readability.(Ï•‹“ÿÿÿÿÿ8“Å°÷Œ2J$d20684d2-53ad-4336-9dd3-dbee46c52719
+d
+java:S62053"Remove this redundant block.(‘‘Þëùÿÿÿÿ8“Å°÷Œ2J$92e37d59-9b95-4565-a4f9-d5017e6de9c2
+“
+java:S1301="KReplace this "switch" statement by "if" statements to increase readability.(Ï•‹“ÿÿÿÿÿ8•Å°÷Œ2J$c19767ba-02a8-4b58-ac53-5faddd755589
+y
+java:S2696E"6Make the enclosing method "static" or remove this set.(·Æ–¯8•Å°÷Œ2J$6aa52b7d-5cad-4dd5-b361-104e4cb2fb70
+d
+java:S6205L"Remove this redundant block.(‘‘Þëùÿÿÿÿ8•Å°÷Œ2J$31913187-7d20-4ddc-ae4f-394a76d9af56
+t
+java:S1128"1Remove this unused import 'modelos.DetalleVenta'.(ãñ£þ8À½Î÷Œ2J$ab5ce5f9-63a8-4988-af6d-a26a65adb086
+„
+java:S1128
+"<Remove this unused import 'vistas.secundarias.VistaUsuario'.(å¬ÑÛþÿÿÿÿ8À½Î÷Œ2J$89db32c8-5ab1-4102-82f3-dce6ddc36f8f

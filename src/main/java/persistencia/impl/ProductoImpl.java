@@ -155,4 +155,25 @@ public class ProductoImpl implements IProducto {
                 .fechaAgregado(Fecha.cast(rs.getString("fecha_agregado")))
                 .build();
     }
+
+    @Override
+    public Response<Producto> updateStock(Producto value) {
+        Response<Producto> response = new Response();
+
+        try (Connection conexion = Conexion.getConnection(); PreparedStatement ps = conexion.prepareStatement(UPDATE_STOCK_PRODUCTO)) {
+            ps.setInt(1, value.getStock());
+            ps.setLong(2, value.getId());
+            ps.executeUpdate();
+
+            response.setStatus(EstadoResponse.SUCCESS);
+            response.setMessage("Registro actualizado...!");
+            response.setData(value);
+        } catch (Exception ex) {
+            response.setStatus(EstadoResponse.ERROR);
+            response.setMessage("Error al actualizar el registro");
+            System.out.println(ex);
+        }
+
+        return response;
+    }
 }

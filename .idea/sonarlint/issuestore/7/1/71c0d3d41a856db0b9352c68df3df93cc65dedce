@@ -1,9 +1,10 @@
 
+z	java:S131;"YComplete cases by adding the missing enum constants or add a default case to this switch.(Ï•‹“ÿÿÿÿÿ8ƒþÅ÷Œ2
 “
-java:S13018"KReplace this "switch" statement by "if" statements to increase readability.(Ï•‹“ÿÿÿÿÿ8á™µú‹2J$66b2c05f-426f-4bbf-b81f-24cb5b8fd853
+java:S1301;"KReplace this "switch" statement by "if" statements to increase readability.(Ï•‹“ÿÿÿÿÿ8á™µú‹2J$0126246a-ab84-4baf-b5e2-4ab36fec07f6
 d
-java:S62059"Remove this redundant block.(‘‘Þëùÿÿÿÿ8è²´ú‹2J$295d2b0a-999a-499c-8ada-85c0bcf00a4b
+java:S6205<"Remove this redundant block.(‘‘Þëùÿÿÿÿ8è²´ú‹2J$58f16148-185c-4773-ab72-785606b936cc
 “
-java:S1301Q"KReplace this "switch" statement by "if" statements to increase readability.(Ï•‹“ÿÿÿÿÿ8å™µú‹2J$b8c6f32e-410a-4983-9da3-67dde6f2a212
+java:S1301T"KReplace this "switch" statement by "if" statements to increase readability.(Ï•‹“ÿÿÿÿÿ8å™µú‹2J$ed8654b4-6efe-4686-910f-818060cd61eb
 d
-java:S6205\"Remove this redundant block.(‘‘Þëùÿÿÿÿ8æ™µú‹2J$1c720bc3-6f4f-44b6-9651-0bfb173a5175
+java:S6205_"Remove this redundant block.(‘‘Þëùÿÿÿÿ8æ™µú‹2J$d75535eb-118d-42b3-aecf-9a0ec0aaca9f

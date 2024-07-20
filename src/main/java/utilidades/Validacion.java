@@ -35,6 +35,11 @@ public class Validacion {
                 .allMatch(campo -> campo.doubleValue() != 0);
     }
 
+    public static boolean validarMayorACero(Number... campos) {
+        return Arrays.stream(campos)
+                .allMatch(campo -> campo.doubleValue() > 0);
+    }
+
     public static void validarNumeros(KeyEvent e) {
         int key = e.getKeyChar();
 

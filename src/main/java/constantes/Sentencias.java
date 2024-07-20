@@ -78,6 +78,9 @@ public class Sentencias {
     // Sentencia SQL para listar todos los clientes
     public static final String LIST_CLIENTE = "SELECT * FROM clientes";
 
+    // Sentencia SQL para actualizar el stock de un producto
+    public static final String UPDATE_STOCK_PRODUCTO = "UPDATE productos SET stock = ? WHERE id = ?";
+
     // Sentencia SQL para obtener un cliente por su id
     public static final String GET_CLIENTE = "SELECT * FROM clientes WHERE id = ?";
 
@@ -95,5 +98,65 @@ public class Sentencias {
 
     // Sentencia SQL para obtener un producto por su id
     public static final String GET_PRODUCTO = "SELECT * FROM productos WHERE id = ?";
+
+    // Sentencia SQL para insertar una venta
+    public static final String INSERT_VENTA = "INSERT INTO ventas (cliente_id, total) VALUES (?, ?)";
+
+    // Sentencia SQL para listar todos las ventas
+    public static final String LIST_VENTA = """
+            SELECT ventas.id AS venta_id,
+                ventas.fecha_venta,
+                ventas.total,
+                clientes.id AS cliente_id,
+                clientes.nombres AS cliente_nombres,
+                clientes.apellidos AS cliente_apellidos,
+                clientes.direccion AS cliente_direccion,
+                clientes.telefono AS cliente_telefono,
+                clientes.email AS cliente_email
+            FROM ventas
+            INNER JOIN clientes ON ventas.cliente_id = clientes.id;
+            """;
+
+    // Sentencia SQL para obtener una venta por su id
+    public static final String GET_VENTA = """
+            SELECT ventas.id AS venta_id,
+                ventas.fecha_venta,
+                ventas.total,
+                clientes.id AS cliente_id,
+                CONCAT(clientes.nombres, ' ', clientes.apellidos) AS cliente_nombre,
+                clientes.direccion AS cliente_direccion,
+                clientes.telefono AS cliente_telefono,
+                clientes.email AS cliente_email,
+                detalle_ventas.id AS detalle_id,
+                productos.id AS producto_id,
+                productos.nombre_producto,
+                productos.descripcion AS producto_descripcion,
+                detalle_ventas.cantidad,
+                detalle_ventas.precio_unitario,
+                detalle_ventas.subtotal
+            FROM ventas
+            INNER JOIN detalle_ventas ON ventas.id = detalle_ventas.venta_id
+            INNER JOIN clientes ON ventas.cliente_id = clientes.id
+            INNER JOIN productos ON detalle_ventas.producto_id = productos.id
+            WHERE ventas.id = ?;
+            """;
+
+    // Sentencia SQL para insertar un detalle de venta
+    public static final String INSERT_DETALLE_VENTA = "INSERT INTO detalle_ventas (venta_id, producto_id, cantidad, precio_unitario, subtotal) VALUES (?, ?, ?, ?, ?)";
+
+    // Sentencia SQL para listar todos los detalles de venta
+    public static final String LIST_DETALLE_VENTA = """
+            SELECT  detalle_ventas.id AS detalle_id,
+                productos.id AS producto_id,
+                productos.nombre_producto,
+                productos.descripcion AS producto_descripcion,
+                productos.precio AS precio_producto,
+                productos.stock AS stock_producto,
+                detalle_ventas.cantidad,
+                detalle_ventas.precio_unitario,
+                detalle_ventas.subtotal
+            FROM detalle_ventas
+            INNER JOIN productos ON detalle_ventas.producto_id = productos.id;
+            """;
 
 }

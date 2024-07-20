@@ -16,6 +16,9 @@ public class ControladorProducto implements ActionListener {
     private VistaProducto vistaProducto;
     private ProductoImpl productoImpl = new ProductoImpl();
 
+    public ControladorProducto() {
+    }
+
     public ControladorProducto(VistaProducto view) {
         this.vistaProducto = view;
         this.vistaProducto.btnRegistrar.addActionListener(this);

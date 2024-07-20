@@ -9,7 +9,7 @@ import java.sql.SQLException;
 
 public class Conexion {
 
-    private String url = String.format("jdbc:mysql://%s:%s/%s?useSSL=false&serverTimezone=UTC",
+    private String url = String.format("jdbc:mysql://%s:%s/%s",
             Server.HOST, Server.PORT, Server.DATABASE);
     private String user = Server.USER;
     private String password = Server.PASSWORD;

@@ -1,7 +1,7 @@
 
 |
-java:S1118":Add a private constructor to hide the implicit public one.(–€¬<8ôïÙƒŠ2J$45c66abc-c03c-4be6-8c06-1581d9e1612f
+java:S1118":Add a private constructor to hide the implicit public one.(–€¬<8ê’ÅÅŒ2J$fa3aec04-cab0-4c13-8d35-4c4d313ae3f1
 Ž
-java:S5998"LRefactor this repetition that can lead to a stack overflow for large inputs.(ÓˆÀR8‚—ÚƒŠ2J$2ddb27e6-436a-440b-9283-4b66e8caead3
+java:S5998"LRefactor this repetition that can lead to a stack overflow for large inputs.(ÓˆÀR8ú’ÅÅŒ2J$eccd0b86-1439-41ce-a13c-d33998734a96
 €
-java:S1612"=Replace this lambda with method reference 'Objects::nonNull'.(¯¶›8ùïÙƒŠ2J$a2854796-abbc-4d85-a0ac-b7b537f5c113
+java:S1612"=Replace this lambda with method reference 'Objects::nonNull'.(¯¶›8‹“ÅÅŒ2J$24fdbc16-dd21-4e61-95e3-93545d7b6ac1

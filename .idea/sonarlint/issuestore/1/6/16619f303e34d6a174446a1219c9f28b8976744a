@@ -1,16 +1,23 @@
 
 w
-java:S3740"/Provide the parametrized type for this generic.(¬Çêşüÿÿÿÿ8éĞïù‹2J$0eb7fd27-463b-4db6-99f0-a742a1898d55
+java:S3740"/Provide the parametrized type for this generic.(¬Çêşüÿÿÿÿ8éĞïù‹2J$fd0aa67e-059b-4612-9132-5f8a4142e27e
 w
-java:S37401"/Provide the parametrized type for this generic.(¬Çêşüÿÿÿÿ8êĞïù‹2J$43d0892a-0939-4599-b982-eca373fa6cb9
+java:S37401"/Provide the parametrized type for this generic.(¬Çêşüÿÿÿÿ8êĞïù‹2J$8881bdc0-bdf5-4531-979f-de30de9a9bdc
 w
-java:S3740I"/Provide the parametrized type for this generic.(¬Çêşüÿÿÿÿ8êĞïù‹2J$d779ab47-ab2a-4893-ad5a-436990ffcc89
+java:S3740I"/Provide the parametrized type for this generic.(¬Çêşüÿÿÿÿ8êĞïù‹2J$f25b6c37-5fb9-42b2-8f5f-35a40ec93aab
 r
-java:S3740]"/Provide the parametrized type for this generic.(âÚøÖ8êĞïù‹2J$8a04a193-dc6b-4f6f-befb-9f99df94ee2d
+java:S3740]"/Provide the parametrized type for this generic.(âÚøÖ8êĞïù‹2J$acd5f3b2-15db-47a7-b0ba-88fa25bf09be
 w
-java:S3740w"/Provide the parametrized type for this generic.(¬Çêşüÿÿÿÿ8şâğù‹2J$a9ede3e1-5505-4cf7-b0e6-b9bea4342d09
-m	java:S106)"+Replace this use of System.out by a logger.(ö¬8öĞïù‹2J$0b38bb47-ee95-4125-898e-ea3096d0f560
-m	java:S106A"+Replace this use of System.out by a logger.(ö¬8úĞïù‹2J$5984d323-fc91-4e90-a897-971239630eb7
-m	java:S106U"+Replace this use of System.out by a logger.(ö¬8üĞïù‹2J$32052ec0-7463-4bb6-9bb0-b4d128f4f302
-m	java:S106o"+Replace this use of System.out by a logger.(ö¬8€Ñïù‹2J$d609875f-6e31-41c5-992b-243023d69363
-n	java:S106"+Replace this use of System.out by a logger.(ö¬8šãğù‹2J$a0a820d1-638d-4687-9d5e-8dbd5b4a50ea
+java:S3740w"/Provide the parametrized type for this generic.(¬Çêşüÿÿÿÿ8şâğù‹2J$3becb37d-69a1-4970-a6ca-965211d7e15b
+x
+java:S3740¡"/Provide the parametrized type for this generic.(¬Çêşüÿÿÿÿ8¹‘Ÿ÷Œ2J$b468dce5-46bb-4cf6-b9b5-450f73e27fa7
+m	java:S106)"+Replace this use of System.out by a logger.(ö¬8öĞïù‹2J$0e5b9673-8c79-4790-ba41-7d34146f7cb7
+m	java:S106A"+Replace this use of System.out by a logger.(ö¬8úĞïù‹2J$d2048934-a9c9-4526-aeff-8fe1625d07bc
+m	java:S106U"+Replace this use of System.out by a logger.(ö¬8üĞïù‹2J$bcb87e88-7d62-497c-970a-a814bcd3f5a8
+m	java:S106o"+Replace this use of System.out by a logger.(ö¬8€Ñïù‹2J$94fc803c-f66a-49c4-aaff-977d2df9a1a4
+n	java:S106"+Replace this use of System.out by a logger.(ö¬8šãğù‹2J$868f7afb-aafd-4cc5-875f-77109923c6bf
+n	java:S106®"+Replace this use of System.out by a logger.(ö¬8î‘Ÿ÷Œ2J$688d7826-f7e7-4e9d-88ae-6cb5c2326de4
+t
+java:S1128",Remove this unused import 'modelos.Cliente'.(ÒË¯¥şÿÿÿÿ8ë’´÷Œ2J$65c2b1ed-2e61-4d66-bbac-a49d1e306b98
+u
+java:S1128"2Remove this unused import 'persistencia.ICliente'.(äİ¢Ò8ë’´÷Œ2J$bfcffd80-e15a-4458-a472-c8751d037e4f

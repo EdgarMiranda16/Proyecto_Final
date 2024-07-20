@@ -69,3 +69,23 @@ a
 1src/main/java/persistencia/impl/ProductoImpl.java,1\6\16619f303e34d6a174446a1219c9f28b8976744a
 d
 4src/main/java/controladores/ControladorProducto.java,7\1\71c0d3d41a856db0b9352c68df3df93cc65dedce
+R
+"src/main/java/modelos/Carrito.java,7\1\71f571b70dc9b71332dff7c404a61a171aef936a
+`
+0src/main/java/vistas/secundarias/VistaVenta.java,e\d\ed3e3369e3205d6e42dd029620566b39277e396e
+P
+ src/main/java/modelos/Venta.java,c\8\c8820be2bc9f9097a2ed0846c2b0123fdf084fc9
+W
+'src/main/java/modelos/DetalleVenta.java,4\d\4dd79706a97491bca52e19b2b5d0ede63a3fd5b4
+V
+&src/main/java/persistencia/IVenta.java,a\b\ab9b14ba02a4c4c6b6425f828eab3f061b93d61e
+]
+-src/main/java/persistencia/IDetalleVenta.java,8\8\8845345d7fa96466f041f07fce8311b9b6862797
+^
+.src/main/java/persistencia/impl/VentaImpl.java,f\a\fab13162e20bde0a49dc0da8bea4f8a413aa3a86
+e
+5src/main/java/persistencia/impl/DetalleVentaImpl.java,7\4\7469b6067d472a9573b13c612d092d5e1921d7f8
+a
+1src/main/java/controladores/ControladorVenta.java,5\3\53c867b5a4eb78e00248a083f4f25a58856f263d
+W
+'src/main/java/modelos/dto/Response.java,4\9\498a58b47d8b8fc9a5c98549a454610be778a590

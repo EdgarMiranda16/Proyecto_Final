@@ -10,11 +10,23 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.List;
 import java.util.Optional;
+import vistas.modales.ModalCliente;
 
 public class ControladorCliente implements ActionListener {
 
     private VistaCliente vistaCliente;
     private ClienteImpl clienteImpl = new ClienteImpl();
+    
+    public ModalCliente modalCliente;
+    
+    public ControladorCliente(ModalCliente modal) {
+        this.modalCliente = modal;
+
+        List<Cliente> datos = this.registros();
+
+        this.modalCliente.pintar(datos);
+        this.modalCliente.setVisible(true);
+    }
 
     public ControladorCliente(VistaCliente view) {
         this.vistaCliente = view;

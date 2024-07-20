@@ -1,0 +1,111 @@
+
+‘
+java:S1192T"IDefine a constant instead of duplicating this literal "Segoe UI" 8 times.(ââ‘òşÿÿÿÿ8Ù™ƒ÷Œ2J$ff66806f-cb52-4b1c-b57e-cfa95cfc8411
+j
+java:S1604_"(Make this anonymous inner class a lambda( ‰™"8Ü™ƒ÷Œ2J$de36e6b1-8873-4c72-9a79-b4e119ebc0c4
+q
+java:S1604†"(Make this anonymous inner class a lambda(ÉÖìŒüÿÿÿÿ8Ü™ƒ÷Œ2J$30873d69-5ef0-4751-8a82-31469ddf57a1
+q
+java:S1604"(Make this anonymous inner class a lambda(ƒ§äŠüÿÿÿÿ8Ü™ƒ÷Œ2J$8413df9b-5acd-490f-8951-6fa07f4aec92
+q
+java:S1604Î"(Make this anonymous inner class a lambda(ğ­‹ëúÿÿÿÿ8Ü™ƒ÷Œ2J$cf825f25-df80-4ecf-bf4b-dfb7f4a4e6f6
+q
+java:S1604˜"(Make this anonymous inner class a lambda(ˆ×¡Êûÿÿÿÿ8Ü™ƒ÷Œ2J$80602206-f5c0-4869-8198-e70d0312bee4
+¥
+java:S1104 "]Make isSelectedCliente a static final constant or non-public and provide accessors if needed.(ÄÃ¦üÿÿÿÿ8Ş™ƒ÷Œ2J$d7de8788-7a8c-41ed-ab78-0cee00c275f2
+›
+java:S1104—"WMake btnAgregar1 a static final constant or non-public and provide accessors if needed.(Ö©°©8ş•ƒöŒ2J$4f9073ba-9f13-46f8-9b5a-29d20a1469e1
+
+java:S1104˜"UMake btnCerrar a static final constant or non-public and provide accessors if needed.(¬µÓÃùÿÿÿÿ8å£õõŒ2J$389226e7-ee0f-463a-88f7-8865d46d6c4a
+¡
+java:S1104š"XMake btnRegistrar a static final constant or non-public and provide accessors if needed.(‹”öĞùÿÿÿÿ8ş•ƒöŒ2J$9202cf65-ca70-49ce-b5b4-d2863b79cbb0
+Ÿ
+java:S1104›"VMake btnRetirar a static final constant or non-public and provide accessors if needed.(ë…†úÿÿÿÿ8å£õõŒ2J$016d5cd9-2824-4300-9140-759166e11d20
+Ÿ
+java:S1104±"VMake txtCliente a static final constant or non-public and provide accessors if needed.(­³Îøÿÿÿÿ8ş•ƒöŒ2J$34961eef-864c-46c4-bfa1-e7bd6292ad5e
+
+java:S1444 "7Make this "public static isSelectedCliente" field final(ÄÃ¦üÿÿÿÿ8á™ƒ÷Œ2J$e51b4697-5a7d-4a45-aca5-ed6f612d8136
+y
+java:S1444±"0Make this "public static txtCliente" field final(­³Îøÿÿÿÿ8–ƒöŒ2J$534f8d58-0bd8-4d2a-96fb-a1e024a47a12
+¢
+java:S1450™"YRemove the "btnLimpiar" field and declare it as a local variable in the relevant methods.(èÜ€óøÿÿÿÿ8Î–ƒöŒ2J$cc8b4d78-5ff8-4fbf-9410-26b199cf35d7
+¨
+java:S1450œ"dRemove the "btnSeleccionarCliente" field and declare it as a local variable in the relevant methods.(êÍªï8Î–ƒöŒ2J$74f1b717-2e63-4b67-b12d-c42047aa5c08
+Ÿ
+java:S1450Ÿ"VRemove the "jLabel1" field and declare it as a local variable in the relevant methods.(°ãÉ¸ÿÿÿÿÿ8Î–ƒöŒ2J$d368fa9e-f1b5-4ca6-acd1-437c2ce0a229
+Ÿ
+java:S1450 "VRemove the "jLabel2" field and declare it as a local variable in the relevant methods.(™úòˆüÿÿÿÿ8µ¤õõŒ2J$ac5874bf-7855-4351-8253-3abd1f81198d
+Ÿ
+java:S1450¡"VRemove the "jLabel3" field and declare it as a local variable in the relevant methods.(Îä€øÿÿÿÿ8µ¤õõŒ2J$caf63ba1-44ab-4530-8769-d02301f63176
+š
+java:S1450¢"VRemove the "jLabel4" field and declare it as a local variable in the relevant methods.(«¢•ã8µ¤õõŒ2J$9b5a5467-9ac0-47c0-8213-437f6087781a
+Ÿ
+java:S1450£"VRemove the "jLabel6" field and declare it as a local variable in the relevant methods.(¸ôÂøÿÿÿÿ8µ¤õõŒ2J$d13b93a0-ecaa-4760-830e-c2d3eb561576
+š
+java:S1450¤"VRemove the "jLabel7" field and declare it as a local variable in the relevant methods.(×ê˜Ÿ8µ¤õõŒ2J$5bb16e6e-15a6-4478-8d5b-90bf095206b7
+Ÿ
+java:S1450¥"VRemove the "jPanel1" field and declare it as a local variable in the relevant methods.(´œ½ÿÿÿÿÿ8µ¤õõŒ2J$b4eb0f43-408c-4385-beab-29090976d392
+Ÿ
+java:S1450¦"VRemove the "jPanel2" field and declare it as a local variable in the relevant methods.(õ òçüÿÿÿÿ8µ¤õõŒ2J$86d237bc-bfcb-4c68-935b-f24739b70d9d
+š
+java:S1450§"VRemove the "jPanel3" field and declare it as a local variable in the relevant methods.(Œ³èÈ8¿¤õõŒ2J$fe6a127c-58dc-4ab4-b5f8-2d277e009fa4
+Ÿ
+java:S1450¨"VRemove the "jPanel4" field and declare it as a local variable in the relevant methods.(§É†¬şÿÿÿÿ8¿¤õõŒ2J$5075482c-45c5-4fa6-b19a-8712cafc6b78
+š
+java:S1450©"VRemove the "jPanel5" field and declare it as a local variable in the relevant methods.(³¡©ú8¿¤õõŒ2J$365fa872-28a0-400d-b3ab-159ee6855b48
+¤
+java:S1450ª"[Remove the "jScrollPane2" field and declare it as a local variable in the relevant methods.(ŠÌ«·şÿÿÿÿ8Á¤õõŒ2J$acf2af27-a9b1-43ea-a9b9-55f731e32ef4
+¤
+java:S1450«"[Remove the "jScrollPane3" field and declare it as a local variable in the relevant methods.(Ò‰êêùÿÿÿÿ8Á¤õõŒ2J$4156fe01-b361-403a-95e8-6e049d00409c
+n
+java:S1948"+Make "productos" transient or serializable.(”¬µ„8Ãšƒ÷Œ2J$4bd220a9-648a-48a2-b447-1f95921207f0
+l
+java:S1948")Make "carrito" transient or serializable.(½ë«Ö8Ãšƒ÷Œ2J$2f38455b-bde4-414b-86d2-c28bfd007a6f
+y
+java:S26967"6Make the enclosing method "static" or remove this set.(Ò©ŸØ8Îšƒ÷Œ2J$c704c718-7c9b-44a8-a8ed-4d92535d6998
+ƒ
+java:S1161±":Add the "@Override" annotation above this method signature(ŠÖô„øÿÿÿÿ8ßšƒ÷Œ2J$26d28ae3-6cca-460f-b3f1-65d7c3021bbc
+~
+java:S1161Å":Add the "@Override" annotation above this method signature(®¸ù8àšƒ÷Œ2J$9a332824-fbfa-4f25-9b3c-39c5a93cbfa8
+ƒ
+java:S1161û":Add the "@Override" annotation above this method signature(ŠÖô„øÿÿÿÿ8ášƒ÷Œ2J$c84de290-baa1-411b-bbc1-6373e42787f5
+~
+java:S1161":Add the "@Override" annotation above this method signature(®¸ù8ášƒ÷Œ2J$91483b58-3ab2-47d4-8d64-ae1fdc9a9e52
+s
+java:S1172“"*Remove this unused method parameter "evt".(¡Äò³úÿÿÿÿ8õšƒ÷Œ2J$8dafb2e0-bc43-4ddf-abb0-b7e9b6d0eb19
+s
+java:S1172—"*Remove this unused method parameter "evt".(¹³Ã‘üÿÿÿÿ8õšƒ÷Œ2J$5f42614a-4153-4298-9869-62e423bf54c0
+z
+java:S2696˜"6Make the enclosing method "static" or remove this set.(·Æ–¯8õšƒ÷Œ2J$d1d380df-4ed1-4c33-b7e6-8ce1d2f527b9
+ˆ
+java:S1854¡"?Remove this useless assignment to local variable "controlador".(âÏÂ’úÿÿÿÿ8õšƒ÷Œ2J$963dc5f5-92ad-4ce4-9b1a-da7cc92954ed
+n
+java:S1172 "*Remove this unused method parameter "evt".(îÄ©ß8õšƒ÷Œ2J$0da6dba7-b964-4fea-b5da-4ebab33b7fa9
+y
+java:S1481¡"0Remove this unused "controlador" local variable.(âÏÂ’úÿÿÿÿ8õšƒ÷Œ2J$9cbefea5-0fd0-48b8-b4ce-e23b44128f00
+n
+java:S1172¥"*Remove this unused method parameter "evt".(„Ñ‘Í8õšƒ÷Œ2J$3482733c-721e-4c87-b9ba-8b79c8f3b29b
+u
+java:S1602±",Remove useless curly braces around statement(ûè©Àÿÿÿÿÿ8õšƒ÷Œ2J$fa6c7bd4-bdda-4a82-ab05-f0a804bff558
+n
+java:S1172º"*Remove this unused method parameter "evt".(ÀõÄ8õšƒ÷Œ2J$e9c67bd8-4194-43f0-93d3-fca9b093ea99
+u
+java:S1602Æ",Remove useless curly braces around statement(ûè©Àÿÿÿÿÿ8õšƒ÷Œ2J$0ee65066-d862-4f2f-a925-7fe10198873b
+m
+java:S1172Î"*Remove this unused method parameter "evt".(¨Şò;8€›ƒ÷Œ2J$511ea73b-2e07-4f13-b878-dd8bc0a8fe4a
+p
+java:S1602ï",Remove useless curly braces around statement(‘»ôª8ƒ›ƒ÷Œ2J$b749fafe-b662-4cec-820b-d51072f01d77
+p
+java:S1602÷",Remove useless curly braces around statement(Ä×¢ 8…›ƒ÷Œ2J$a6d6d7e7-5cab-41d5-b115-b12486d32cc0
+s
+java:S1172€"*Remove this unused method parameter "evt".(ãá¾œûÿÿÿÿ8‡›ƒ÷Œ2J$f4018a56-276b-4207-ad7e-52a7d0a829aa
+p
+java:S1602¸",Remove useless curly braces around statement(‘»ôª8‰›ƒ÷Œ2J$5e3fa7a4-9fd5-405c-84a4-e3267a2a837a
+p
+java:S1602Ä",Remove useless curly braces around statement(Ä×¢ 8‰›ƒ÷Œ2J$729e935c-d746-465c-af51-553a67ca96e3
+u
+java:S1602Ğ",Remove useless curly braces around statement(Õê×ˆøÿÿÿÿ8‰›ƒ÷Œ2J$566d91df-e18c-49d3-b585-f3538a48d0ab
+p
+java:S1602ÿ",Remove useless curly braces around statement(‘»ôª8ƒ‘„÷Œ2J$ef4c08e3-82f0-4818-874e-6f73bfde1455
+p
+java:S1602‰",Remove useless curly braces around statement(Ä×¢ 8ñ°Œ÷Œ2J$8cdcd3af-6c70-43ee-864c-78c33e8026fe

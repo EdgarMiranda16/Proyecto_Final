@@ -7,9 +7,11 @@ package vistas.principales;
 import controladores.ControladorCliente;
 import controladores.ControladorProducto;
 import controladores.ControladorUsuario;
+import controladores.ControladorVenta;
 import vistas.secundarias.VistaCliente;
 import vistas.secundarias.VistaProducto;
 import vistas.secundarias.VistaUsuario;
+import vistas.secundarias.VistaVenta;
 
 /**
  *
@@ -94,6 +96,11 @@ public class VistaMainAdministrador extends javax.swing.JFrame {
         jMenu3.setText("Operaciones");
 
         jMenuItem5.setText("Ventas");
+        jMenuItem5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem5ActionPerformed(evt);
+            }
+        });
         jMenu3.add(jMenuItem5);
 
         jMenuBar1.add(jMenu3);
@@ -137,6 +144,10 @@ public class VistaMainAdministrador extends javax.swing.JFrame {
     private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
         ControladorProducto controlador = new ControladorProducto(new VistaProducto(this, true));
     }//GEN-LAST:event_jMenuItem3ActionPerformed
+
+    private void jMenuItem5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem5ActionPerformed
+        ControladorVenta controlador = new ControladorVenta(new VistaVenta(this, true));
+    }//GEN-LAST:event_jMenuItem5ActionPerformed
 
     /**
      * @param args the command line arguments
