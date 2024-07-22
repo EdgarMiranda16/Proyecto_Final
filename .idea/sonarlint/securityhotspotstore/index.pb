@@ -89,3 +89,7 @@ a
 1src/main/java/controladores/ControladorVenta.java,5\3\53c867b5a4eb78e00248a083f4f25a58856f263d
 W
 'src/main/java/modelos/dto/Response.java,4\9\498a58b47d8b8fc9a5c98549a454610be778a590
+V
+&src/main/java/utilidades/Exportar.java,e\f\ef90b558ecd23df379f7c0920377901f16d51ac2
+A
+Reporte de ventas,3\c\3cfe893492df2eff5df0a4290158b6774f3256c4

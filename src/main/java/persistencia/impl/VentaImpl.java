@@ -4,7 +4,6 @@ import conexion.Conexion;
 import constantes.EstadoResponse;
 import modelos.*;
 import modelos.dto.Response;
-import persistencia.IProducto;
 import persistencia.IVenta;
 import utilidades.Fecha;
 
@@ -22,7 +21,8 @@ public class VentaImpl implements IVenta {
 
         try (Connection conexion = Conexion.getConnection(); PreparedStatement ps = conexion.prepareStatement(INSERT_VENTA, Statement.RETURN_GENERATED_KEYS)) {
             ps.setLong(1, value.getCliente().getId());
-            ps.setDouble(2, value.getTotal());
+            ps.setLong(2, value.getUsuario().getId());
+            ps.setDouble(3, value.getTotal());
 
             ps.executeUpdate();
 

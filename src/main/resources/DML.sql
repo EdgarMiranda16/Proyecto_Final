@@ -41,9 +41,11 @@ CREATE TABLE ventas
 (
     id          INT AUTO_INCREMENT PRIMARY KEY,
     cliente_id  INT,
+    usuario_id  INT,
     fecha_venta TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     total       DECIMAL(10, 2) NOT NULL,
-    FOREIGN KEY (cliente_id) REFERENCES clientes (id)
+    FOREIGN KEY (cliente_id) REFERENCES clientes (id),
+    FOREIGN KEY (usuario_id) REFERENCES usuarios (id)
 );
 
 CREATE TABLE detalle_ventas

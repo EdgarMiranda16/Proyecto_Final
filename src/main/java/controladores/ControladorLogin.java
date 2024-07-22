@@ -58,9 +58,9 @@ public class ControladorLogin implements ActionListener {
                         .toUpperCase();
 
                 switch (perfil) {
-                    case "ADMINISTRADOR" -> new VistaMainAdministrador().setVisible(true);
-                    case "GERENTE" -> new VistaMainGerente().setVisible(true);
-                    case "VENDEDOR" -> new VistaMainVendedor().setVisible(true);
+                    case "ADMINISTRADOR" -> new VistaMainAdministrador(respuesta.getData()).setVisible(true);
+                    case "GERENTE" -> new VistaMainGerente(respuesta.getData()).setVisible(true);
+                    case "VENDEDOR" -> new VistaMainVendedor(respuesta.getData()).setVisible(true);
                     default -> JOptionPane.showMessageDialog(this.vistaLogin, "Perfil no contemplado...!");
                 }
                 this.vistaLogin.dispose();

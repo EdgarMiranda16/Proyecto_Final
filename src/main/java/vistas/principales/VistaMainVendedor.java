@@ -5,19 +5,25 @@
 package vistas.principales;
 
 import controladores.ControladorCliente;
+import controladores.ControladorVenta;
+import modelos.Usuario;
 import vistas.secundarias.VistaCliente;
+import vistas.secundarias.VistaVenta;
 
 /**
  *
  * @author kei40
  */
 public class VistaMainVendedor extends javax.swing.JFrame {
+    
+    private Usuario usuario;
 
     /**
      * Creates new form VistaMainVendedor
      */
-    public VistaMainVendedor() {
+    public VistaMainVendedor(Usuario usuario) {
         initComponents();
+        this.usuario = usuario;
     }
 
     /**
@@ -66,6 +72,11 @@ public class VistaMainVendedor extends javax.swing.JFrame {
         jMenu3.setText("Operaciones");
 
         jMenuItem5.setText("Ventas");
+        jMenuItem5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem5ActionPerformed(evt);
+            }
+        });
         jMenu3.add(jMenuItem5);
 
         jMenuBar1.add(jMenu3);
@@ -95,40 +106,9 @@ public class VistaMainVendedor extends javax.swing.JFrame {
         ControladorCliente controlador = new ControladorCliente(new VistaCliente(this, true));
     }//GEN-LAST:event_jMenuItem2ActionPerformed
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(VistaMainVendedor.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(VistaMainVendedor.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(VistaMainVendedor.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(VistaMainVendedor.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new VistaMainVendedor().setVisible(true);
-            }
-        });
-    }
+    private void jMenuItem5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem5ActionPerformed
+        ControladorVenta controlador = new ControladorVenta(new VistaVenta(this, true), usuario);
+    }//GEN-LAST:event_jMenuItem5ActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JMenu jMenu1;

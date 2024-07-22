@@ -2,8 +2,7 @@ package persistencia.impl;
 
 import conexion.Conexion;
 import constantes.EstadoResponse;
-import modelos.DetalleVenta;
-import modelos.Producto;
+import modelos.*;
 import modelos.dto.Response;
 import persistencia.IDetalleVenta;
 
@@ -15,6 +14,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 import static constantes.Sentencias.*;
+
+import utilidades.Fecha;
 
 public class DetalleVentaImpl implements IDetalleVenta {
 
@@ -70,6 +71,26 @@ public class DetalleVentaImpl implements IDetalleVenta {
     }
 
     private DetalleVenta registro(ResultSet rs) throws SQLException {
+        Usuario usuario = Usuario.builder()
+                .id(rs.getLong("usuario_id"))
+                .usuario(rs.getString("usuario_registro"))
+                .build();
+
+        Cliente cliente = Cliente.builder()
+                .id(rs.getLong("cliente_id"))
+                .nombres(rs.getString("cliente_nombres"))
+                .apellidos(rs.getString("cliente_apellidos"))
+                .build();
+        
+        Venta venta = Venta.builder()
+                .id(rs.getLong("venta_id"))
+                .cliente(cliente)
+                .usuario(usuario)
+                .fechaVenta(Fecha.cast(rs.getString("fecha_venta")))
+                .total(rs.getDouble("total"))
+                .build();
+        
+        
         Producto producto = Producto.builder()
                 .id(rs.getLong("producto_id"))
                 .nombreProducto(rs.getString("nombre_producto"))
@@ -81,6 +102,7 @@ public class DetalleVentaImpl implements IDetalleVenta {
         return DetalleVenta.builder()
                 .id(rs.getLong("detalle_id"))
                 .producto(producto)
+                .venta(venta)
                 .cantidad(rs.getInt("cantidad"))
                 .precioUnitario(rs.getDouble("precio_unitario"))
                 .subTotal(rs.getDouble("subtotal"))

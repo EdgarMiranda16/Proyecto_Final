@@ -1,17 +1,12 @@
 
- 	java:S1312"YComplete cases by adding the missing enum constants or add a default case to this switch.(Ï•‹“ÿÿÿÿÿ8‹Å°÷Œ2J$2d1e011e-84da-4b3a-84be-bfe806d9ec3d
+ 	java:S131G"YComplete cases by adding the missing enum constants or add a default case to this switch.(Ï•‹“ÿÿÿÿÿ8´Ñ¿2J$b451c5f5-e116-4186-82b3-455e2334c42b
 “
-java:S13012"KReplace this "switch" statement by "if" statements to increase readability.(Ï•‹“ÿÿÿÿÿ8“Å°÷Œ2J$d20684d2-53ad-4336-9dd3-dbee46c52719
+java:S1301G"KReplace this "switch" statement by "if" statements to increase readability.(Ï•‹“ÿÿÿÿÿ8¶Ñ¿2J$7edda0e3-6a25-4560-b4dc-03d48752c610
 d
-java:S62053"Remove this redundant block.(‘‘Şëùÿÿÿÿ8“Å°÷Œ2J$92e37d59-9b95-4565-a4f9-d5017e6de9c2
+java:S6205H"Remove this redundant block.(‘‘Şëùÿÿÿÿ8¸Ñ¿2J$26340054-97b7-4228-bf2e-69b43581999f
 “
-java:S1301="KReplace this "switch" statement by "if" statements to increase readability.(Ï•‹“ÿÿÿÿÿ8•Å°÷Œ2J$c19767ba-02a8-4b58-ac53-5faddd755589
+java:S1301S"KReplace this "switch" statement by "if" statements to increase readability.(Ï•‹“ÿÿÿÿÿ8ºÑ¿2J$526d6928-9a1c-487a-aa3d-056d76c82032
 y
-java:S2696E"6Make the enclosing method "static" or remove this set.(·Æ–¯8•Å°÷Œ2J$6aa52b7d-5cad-4dd5-b361-104e4cb2fb70
+java:S2696["6Make the enclosing method "static" or remove this set.(·Æ–¯8¼Ñ¿2J$7b0ff4a6-1717-4609-b817-d4e6619243be
 d
-java:S6205L"Remove this redundant block.(‘‘Şëùÿÿÿÿ8•Å°÷Œ2J$31913187-7d20-4ddc-ae4f-394a76d9af56
-t
-java:S1128"1Remove this unused import 'modelos.DetalleVenta'.(ãñ£ş8À½Î÷Œ2J$ab5ce5f9-63a8-4988-af6d-a26a65adb086
-„
-java:S1128
-"<Remove this unused import 'vistas.secundarias.VistaUsuario'.(å¬ÑÛşÿÿÿÿ8À½Î÷Œ2J$89db32c8-5ab1-4102-82f3-dce6ddc36f8f
+java:S6205b"Remove this redundant block.(‘‘Şëùÿÿÿÿ8½Ñ¿2J$41e624ca-eec1-46c5-a39a-32f695eb3533

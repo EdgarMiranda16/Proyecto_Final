@@ -15,6 +15,7 @@ public class Venta {
 
     private Long id;
     private Cliente cliente;
+    private Usuario usuario;
     private LocalDateTime fechaVenta;
     private List<DetalleVenta> detalleVenta;
     private Double total;
